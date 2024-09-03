@@ -1,0 +1,75 @@
+.navbar {
+    background-color: #6a1b9a; /* Deep purple background */
+    border-bottom: 1px solid #8e44ad;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-logo a {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #fff; /* White text for good contrast */
+    text-decoration: none;
+    font-family: 'Playfair Display', serif; /* Elegant font */
+    letter-spacing: 1px;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navbar-links li {
+    position: relative;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color: #fff; /* White text for links */
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    padding: 0.5rem 0;
+    position: relative;
+  }
+  
+  .navbar-links li a:hover {
+    color: #f1c40f; /* Golden color on hover */
+  }
+  
+  .navbar-links li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f1c40f; /* Golden underline */
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .navbar-links li a:hover::after {
+    width: 100%;
+  }
+  
+  .navbar .btn {
+    background-color: #f1c40f; /* Golden button */
+    color: #6a1b9a; /* Purple text on button */
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .navbar .btn:hover {
+    background-color: #d4ac0d; /* Darker golden on hover */
+  }
+  
